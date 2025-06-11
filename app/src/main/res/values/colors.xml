@@ -1,0 +1,25 @@
+<resources>
+    <!-- Mevcut renkler -->
+        <color name="background_blue">#E0F7FA</color>
+        <color name="primary_blue">#0288D1</color>
+        <color name="text_dark">#1A1A1A</color>
+        <color name="text_secondary">#666666</color>
+        <color name="white">#FFFFFF</color>
+        <color name="beige">#F5F5DC</color> <!-- Bej rengi -->
+        <color name="rain_background">#4682B4</color>
+        <color name="rain_color">#4682B4</color> <!-- Steel Blue -->
+        <color name="clear_color">#FFD700</color> <!-- Gold -->
+        <color name="cloudy_color">#B0C4DE</color> <!-- Light Steel Blue -->
+        <color name="snow_color">#F0F8FF</color> <!-- Alice Blue -->
+        <color name="thunderstorm_color">#696969</color> <!-- Dim Gray -->
+        <color name="default_color">#FFFFFF</color> <!-- White -->
+        <color name="dark_gray">#424242</color>
+
+    <!-- Eksik renkler (Material Design paletinden) -->
+    <color name="purple_200">#E1BEE7</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_200">#80DEEA</color>
+    <color name="teal_700">#00838F</color>
+    <color name="black">#000000</color>
+</resources>

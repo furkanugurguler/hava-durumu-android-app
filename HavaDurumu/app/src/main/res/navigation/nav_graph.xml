@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.havadurumu.ui.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.example.havadurumu.ui.forecast.ForecastFragment"
+        android:label="ForecastFragment">
+        <action
+            android:id="@+id/action_forecastFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_forecastFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_forecastFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.havadurumu.ui.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.havadurumu.ui.favorite.FavoriteFragment"
+        android:label="Favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+</navigation>

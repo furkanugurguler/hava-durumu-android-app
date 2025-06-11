@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.HavaDurumu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color (Action Bar rengi) -->
+        <item name="colorPrimary">@color/beige</item>
+        <item name="colorPrimaryVariant">@color/beige</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/background_blue</item>
+        <item name="colorSecondaryVariant">@color/background_blue</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+
+        <!-- Status bar rengi -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/beige</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+</resources>

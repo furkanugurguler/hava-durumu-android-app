@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/beige</item>
+        <item name="colorPrimaryVariant">@color/beige</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/beige</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+</resources>

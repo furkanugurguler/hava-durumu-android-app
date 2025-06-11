@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.havadurumu.ui.WeatherAnimationView
+        android:id="@+id/weather_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/gradient_background"
+        android:id="@+id/layout_search_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:background="@android:drawable/edit_text"
+            android:padding="4dp">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Şehir ara (ör. İstanbul)"
+                android:padding="12dp"
+                android:background="@null"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_secondary"
+                android:maxHeight="50dp"
+                android:scrollbars="vertical"
+                android:overScrollMode="never"/>
+
+            <ImageView
+                android:id="@+id/ivClearSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:visibility="gone"
+                android:contentDescription="Aramayı temizle" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</FrameLayout>
