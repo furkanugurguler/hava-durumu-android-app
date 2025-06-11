@@ -16,10 +16,19 @@ Bu uygulama, OpenWeatherMap API kullanarak kullanıcıya seçilen şehir için a
 - Temiz ve anlaşılır UI
 
 ## 🔧 Kurulum
-1. [OpenWeatherMap](https://openweathermap.org/api) üzerinden bir API anahtarı al
-2. Android Studio ile projeyi aç
-3. API anahtarını `Constants.kt` gibi bir dosyada tanımla
 
+1. [OpenWeatherMap](https://openweathermap.org/api) sitesine girip ücretsiz bir API anahtarı alın.  
+2. Projede `Constants.kt` adında bir Kotlin dosyası oluşturun.  
+3. Aşağıdaki gibi `API_KEY` sabitini ekleyin:
+
+KOTLİN !!
+// Constants.kt
+package com.example.havadurumu.util
+
+object Constants {
+    const val API_KEY = "BURAYA_KENDİ_API_KEYİNİ_YAZ"
+}
+---------------------------------
 ## 📷 Ekran Görüntüleri
 Eğer varsa birkaç ekran görüntüsünü buraya ekleyebilirsin.
 
